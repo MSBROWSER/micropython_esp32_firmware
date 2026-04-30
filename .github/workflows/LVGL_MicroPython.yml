@@ -12,6 +12,8 @@ jobs:
   LVGL_MicroPython-ESP32:
     name: Build LVGL_MicroPython
     runs-on: ubuntu-22.04
+    permissions: 
+        contents: write
 
     strategy:
       fail-fast: false
