@@ -78,7 +78,7 @@ jobs:
           repo_token: ${{secrets.GITHUB_TOKEN}}
           file: ${{env.OUTPUT}}/${{env.FIREMWARE}}
           asset_name: ${{env.FIREMWARE}}
-          tag: LVGL_MicroPython-${{env.COMPILE_DATE}}
+          tag: LVGLmpy-${{env.COMPILE_DATE}}
           body: |
             ### LVGL & MicroPython Firmware For ESP32
             [LVGL_MicroPython](https://github.com/lvgl-micropython/lvgl_micropython)  
