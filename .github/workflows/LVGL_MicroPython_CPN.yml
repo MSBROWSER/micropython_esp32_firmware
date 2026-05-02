@@ -10,7 +10,7 @@ env:
 
 jobs:
   LVGL_MicroPython-ESP32:
-    name: Build LVGL_MicroPython
+    name: Build LVGL_MicroPython[NEW]
     runs-on: ubuntu-22.04
     permissions: 
         contents: write
