@@ -1,4 +1,4 @@
-name: LVGL_MicroPython For ESP32
+name: LVGL_MicroPython For ESP32 Adapted
 
 on:
   workflow_dispatch:
@@ -19,7 +19,7 @@ jobs:
       fail-fast: false
       matrix:
         info:
-          - '{ "BOARD": "ESP32_GENERIC_S3",  "BOARD_VARIANT": "SPIRAM",      "FLASH": "16",   "DISPLAY": "st7789",  "INDEV":"" }'
+          - '{ "BOARD": "ESP32_GENERIC_S3",  "BOARD_VARIANT": "SPIRAM_OCT",  "FLASH": "16",   "DISPLAY": "st7789",  "INDEV":"" }'
           - '{ "BOARD": "ESP32_GENERIC_S3",  "BOARD_VARIANT": "SPIRAM_OCT",  "FLASH": "16",   "DISPLAY": "hx8369",  "INDEV":"" }'
           - '{ "BOARD": "ESP32_GENERIC_S3",  "BOARD_VARIANT": "SPIRAM_OCT",  "FLASH": "16",   "DISPLAY": "ili9341", "INDEV":"" }'
     
