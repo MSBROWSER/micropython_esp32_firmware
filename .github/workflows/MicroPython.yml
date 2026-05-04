@@ -87,7 +87,8 @@ jobs:
         if: steps.compile.outputs.status == 'success' && !cancelled()
         uses: svenstaro/upload-release-action@v2
         with:
-          repo_token: ${{secrets.GITHUB_TOKEN}}
+          # repo_token: ${{secrets.GITHUB_TOKEN}}
+          repo_token: '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'
           file: ${{env.OUTPUT}}/${{env.FIREMWARE}}
           asset_name: ${{env.FIREMWARE}}
           tag: MicroPython-${{env.MICROPYTHON_VERSION}}
