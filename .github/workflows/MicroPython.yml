@@ -16,7 +16,8 @@ jobs:
   MicroPython_ESP32:
     name: Build MicroPython
     runs-on: ubuntu-22.04
-    permissions: write-all
+    permissions: 
+      contents: write
     strategy:
       fail-fast: false
       matrix:
